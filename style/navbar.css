@@ -1,0 +1,119 @@
+/* ======= NAVBAR STYLE  =========*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: #fff;
+    padding: 5.5rem 0rem;
+    z-index: 99999999;
+}
+
+.menu {
+    display: flex;
+    font-size: 2rem;
+    gap: 3rem;
+    line-height: 3rem;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+.modal{
+    display: none;
+}
+label{
+    display: none;
+}
+.talk > button{
+    padding: 1.2rem 4rem;
+    border-radius: .5rem;
+    border: 1px solid black;
+    background-color: #fff;
+}
+nav a{
+    transition: ease .5s ;
+}
+
+.menu a{
+    color: #263238;
+}
+@media screen and (max-width:768px) {
+    input[type=checkbox]{
+        display: block;
+    }
+    .modal{
+        display: block;
+    }
+    label{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .talk{
+        display: none;
+    }
+    .modal{
+        position: absolute;
+        top: -100%;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100vh;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .5s linear;
+        display: none;
+    }
+    #ketmon:checked + .modal{
+        display: inline-flex;
+        align-self: center;
+
+    }
+    .modal_content{
+        font-size: 5rem;
+        background-color: mediumseagreen;
+        padding: 4rem;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .modal_content > li > a{
+        color: #fff;
+    }
+    input[type=checkbox]{
+        display: none;
+    }
+    input[type=checkbox]:checked + .modal{
+        top: 0;
+    }
+    input[type=checkbox]:checked ~ label > img:nth-child(2){
+        display: block;
+    }
+    input[type=checkbox]:checked ~ label > img:nth-child(1){
+        visibility: hidden;
+    }
+
+    label{
+        position: relative;
+    }
+    label > img:nth-child(2){
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 11;
+        display: none;
+    }
+
+}

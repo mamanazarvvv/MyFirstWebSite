@@ -1,0 +1,51 @@
+/* ======= FONTS =========*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+/* ======= COLOR =========*/
+:root {
+    --main-and-btn-color: #263238;
+    --public-p-color: #8F95A5;
+    --bg-color: #F5F5F5;
+    --price-bg-color: #EEEEEE;
+}
+
+/* ======= BASIC STYLE  =========*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    /* font size 10px */
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+.container {
+    max-width: 134rem;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:992px) {
+    .container{
+        max-width: 94.2rem;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .container{
+        max-width: 71.3rem;
+    }
+}

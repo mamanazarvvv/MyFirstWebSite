@@ -1,0 +1,38 @@
+
+.study {
+    display: flex;
+    gap: 3.9rem;
+    margin-bottom: 5rem;
+    justify-content: center;
+}
+
+.online>img {
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.money {
+    padding: 0.9rem 2.1rem;
+    background-color: var(--bg-color);
+    display: inline-flex;
+    align-items: center;
+    gap: .8rem;
+    border-radius: .5rem;
+}
+
+.money>span:nth-child(2) {
+    margin-bottom: 0;
+}
+
+.money>span:nth-child(1) {
+    line-height: 0rem;
+}
+@media screen and (max-width:575px){
+    .study{
+        flex-wrap: wrap;
+    }
+    .online{
+        text-align: center;
+    }
+}
